@@ -1,0 +1,21 @@
+<div class="form-group row">
+    <label for="">Employee Name</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="EmployeeName">
+    </div>
+</div>
+<div class="form-group row">
+    <label for="">Department Name</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="Department">
+    </div>
+</div>
+<div class="form-group row">
+    <label for="">Employee Salary</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="Salary">
+    </div>
+</div><br>
+<button class="btn btn-primary" (click)="saveEmployee()" 
+*ngIf="emp.EmployeeId==0">Save</button>
+<button class="btn btn-primary" >Update</button>
